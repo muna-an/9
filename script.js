@@ -1,3 +1,3 @@
 function bookmark(){
-    document.getElementById('bookmark').innerHTML = 'Bookmarked';
+    document.getElementById("bookmark").innerHTML = 'Bookmarked';
 }

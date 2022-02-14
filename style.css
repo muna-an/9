@@ -1,0 +1,233 @@
+@import url(https://fonts.googleapis.com/css?family=Commissioner:100,200,300,regular,500,600,700,800,900);
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Commissioner', sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.hero{
+    background-image: url('img/image-hero-desktop.jpg');
+    background-size: cover;
+    height: 60vh;
+    width: 100%;
+}
+.hero nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 8rem;
+}
+.hero nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none; /*omit the dots of ul*/
+    text-decoration: none; /*omit line bottom link*/
+}
+.hero nav ul > li a{
+    padding-left: 1rem;
+    text-decoration: none; /*omit line bottom link*/
+    color: aliceblue;
+}
+/*----------------------- T W O ------------------*/
+.two {
+    background-color: hsl(0, 5%, 89%);
+    /* height: 90vh; */
+    width: 100%; 
+}
+ /*---------------- B O X 1 --------------*/
+.two .two-box-1{ /*small centerd box */
+    width: 55%;
+    height: 40vh;
+    background-color: rgb(248, 248, 248);
+    z-index: 3;
+    margin: auto;
+    margin-top: -10%;
+    border-radius: 1rem;
+    text-align: center;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+.two-box-1 .two-sub-logo{
+    margin-top: -13%;
+}
+.two-box-1 .two-text, .two-text h2, .two-text p{
+    padding-top: 1.5rem;
+}
+.two-box-1 .two-text p{
+    color: hsl(0, 0%, 48%);
+}
+.two-box-1 .two-btn{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 8rem 0;
+}
+.two-btn button{
+    width: 9.5rem;
+    height: 3.6rem;
+    border-radius: 2rem;
+    border: none;
+    font-weight: 700;
+}
+.two-btn .two-btn-1{
+    background: hsl(176, 50%, 47%);
+    color: #fff;
+}
+.two-btn .two-btn-1:hover{
+    background: hsl(176, 72%, 28%);
+    cursor: pointer;
+}
+.two-btn .two-btn-2{
+    display: flex;
+    color: hsl(0, 0%, 48%);
+}
+.two-btn .two-btn-2:hover{
+    background:hsl(176, 72%, 28%) ;
+    color: #fff;
+    cursor: pointer;
+}
+.two-btn .two-btn-2 span{
+    padding: 1.2rem 0.5rem;
+
+}
+ /*---------------- B O X 2 ---------------*/
+ .two .two-box-2{ /*small centerd box */
+    width: 55%;
+    height: 35vh;
+    background-color: rgb(248, 248, 248);
+    z-index: 3;
+    margin: auto;
+    margin-top: 2%;
+    border-radius: 1rem;
+    text-align: left;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+.two-box-2 .box-content{
+    display: flex;
+    justify-content: space-evenly;
+}
+/*-------- first way to create progress bar ----------
+.two-box-2 .two-prog{
+    padding: 3.5rem 0;
+}
+.two-box-2 progress{
+    -webkit-appearance: none;
+    border-radius:2rem ;
+    width: 100%;    
+}
+::-webkit-progress-bar{
+    background:hsl(0, 5%, 89%);  
+}
+::-webkit-progress-value{
+    background: hsl(176, 50%, 47%);
+} ---------------------------------------------------*/
+
+/* --- seond way progress bar with rounded eddges ---*/
+.two-box-2 .two-prog-container{
+    padding: 3rem 0;
+}
+.two-box-2  .two-prog-container .two-prog progress{
+    opacity: 0;
+}
+.two-box-2 .two-prog-container .two-prog{
+    position: relative;
+    display: inline-block;
+    background: #eee;
+    height: 1rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.two-box-2 .two-prog-container .two-prog::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 75%;
+    border-radius: 0.5rem;
+    background: hsl(176, 50%, 47%);
+}
+/*----------------------- B O X 3 --------------------*/
+.two .two-box-3{ /*big centerd box */
+    width: 55%;
+    /* height: 90vh; */
+    background-color: rgb(248, 248, 248);
+    z-index: 3;
+    margin: auto;
+    margin-top: 2%;
+    border-radius: 1rem;
+    text-align: left;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+.two .two-box-3 .two-box-3-text{
+    padding: 1rem;
+}
+.two-box-3 .two-box-3-text p{
+    padding: 1rem 0;
+    color: hsl(0, 0%, 48%);
+}
+.two-box-3 .two-box-3-boxes{
+    padding: 2rem;
+    background: rgb(248, 248, 248);
+    border-radius: 1rem;
+    box-shadow: 1px 1px 1px 2px rgba(0,0,0,0.25);
+    /* border: 0.05rem solid hsl(0, 0%, 48%); */
+    margin: 0.5rem;
+}
+.two-box-3 .two-box-3-boxes .two-box-3-border{
+    padding: 1rem;
+}
+.two-box-3-boxes .two-box-3-border .box-3-heading{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+.two-box-3-boxes .two-box-3-border p{
+    padding: 1rem 0;
+    color: hsl(0, 0%, 48%);
+}
+.two-box-3-boxes .two-box-3-border .box-3-btn{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0; 
+}
+.box-3-btn span{
+    font-size: 1rem;
+    font-weight: 400;
+    color: hsl(0, 0%, 48%);
+}
+.box-3-btn button{
+    width: 9.5rem;
+    height: 3rem;
+    border-radius: 2rem;
+    border: none;
+    font-weight: 700;
+    background: hsl(176, 50%, 47%);
+    color: #fff;
+}
+.box-3-btn button:hover{
+    background: hsl(176, 72%, 28%);
+    cursor:pointer;
+}
+.two-box-3-border .box-3-heading h3{
+    color: hsl(176, 50%, 47%);
+}
+
+/*---------- last box is inactive--------*/
+
+.two-box-3-boxes .box-3-btn #btn-disable{
+    background: hsl(0, 0%, 48%);
+}
+.two-box-3 .two-box-3-boxes:last-child{
+    opacity: 0.5;
+}
+
