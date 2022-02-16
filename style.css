@@ -128,7 +128,7 @@
     background: hsl(176, 50%, 47%);
 } ---------------------------------------------------*/
 
-/* --- seond way progress bar with rounded eddges ---*/
+/* --- second way progress bar with rounded edges ---*/
 .two-box-2 .two-prog-container{
     padding: 3rem 0;
 }
@@ -230,4 +230,215 @@
 .two-box-3 .two-box-3-boxes:last-child{
     opacity: 0.5;
 }
+
+
+
+
+
+
+/* ------------------- P O P  U P  M S G ---------------------*/
+.popup-main-box{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    height: 50%;
+    width: 55%;
+    background-color: rgb(248, 248, 248);
+    z-index: 3;
+    margin: auto;
+    margin-top: 2%;
+    border-radius: 1rem;
+    text-align: left;
+    padding: 2rem;
+}
+.popup-main-box .popup-main-text{
+    padding: 1rem;
+}
+.popup-main-box .popup-main-text p{
+    padding: 1rem 0;
+    color: hsl(0, 0%, 48%);
+}
+.popup-main-box .popup-box{
+    padding: 1rem;
+    background: rgb(248, 248, 248);
+    border-radius: 0.5rem;
+    /* box-shadow: 1px 1px 1px 2px rgba(0,0,0,0.25); */
+    border: 0.05rem solid hsl(0, 2%, 62%);
+    margin: 0.5rem;
+    
+}
+.popup-box .popup-heading{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+}
+.popup-heading .radio-wrap{
+    display: flex;
+    justify-content: start;
+    gap: 0.5rem;
+}
+.popup-box .popup-heading h3{
+    color: hsl(176, 50%, 47%);
+}
+.popup-heading span{
+    font-size: 1rem;
+    font-weight: 600;
+    padding-left: 0.5em;
+}
+.popup-box p{
+    padding: 1.2rem;
+}
+/*------------- black heading ----------*/
+.popup-box .black-heading h3{
+    color: #000;
+}
+.black-heading span{
+    color: hsl(176, 50%, 47%);
+}
+/*-------------disabled --------------*/
+.popup-main-box .popup-box:last-child{
+    opacity: 0.5;
+}
+.popup-box .disabled-heading h3{
+    color: #000;
+}
+.popup-box .disabled-heading span{
+    color: hsl(176, 50%, 47%);
+}
+/*--------------- M O R E ------------*/
+.popup-box .popup-box-more{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+.popup-box-more p{
+    margin-top: 1.5%;
+}
+.popup-box-more .popup-box-more-controls{
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+.popup-box-more .popup-box-more-controls input[type=text]{
+    width: 6rem;
+    height: 3rem;
+    border-radius: 2rem;
+    border: 1px solid hsl(0, 2%, 62%);
+    font-weight: 700;
+    text-align: center;
+}
+.popup-box-more-controls button{
+    width: 6rem;
+    height: 3rem;
+    border-radius: 2rem;
+    background: hsl(176, 50%, 47%);
+    border: 1px solid hsl(176, 50%, 47%);
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+/* --------------------ROUNDED B T N -------------- */
+.popup-heading .btn-wrap{
+    display: flex;
+    gap: 1rem;
+}
+.popup-heading .btn-wrap button{
+    margin-top: 1.5%;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    /* box-shadow: inset 0 0 0 hsl(176, 50%, 47%); */
+    border: 1px solid #999;
+}
+.popup-heading .btn-wrap-hover button:hover{
+    box-shadow: inset 0 0 0 0.2rem hsl(176, 50%, 47%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------- thanks popup msg -----------*/
+/* .popup-thanks{ 
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition:opacity 500ms;
+    /* visibility: hidden; 
+    opacity: 0;
+}*/
+/*.popup-thanks:target{
+    visibility: visible;
+    opacity: 1;
+}*/
+.popup{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 25%;
+    background: #eee;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.popup-thanks p{
+    color: rgb(199, 199, 199);
+    padding: 1.3rem;
+}
+.popup-thanks button{
+    width: 6.5rem;
+    height: 3rem;
+    border-radius: 2rem;
+    border: none;
+    font-weight: 700;
+    background: hsl(176, 50%, 47%);
+    color: #fff;
+    cursor: pointer;
+}
+
 
